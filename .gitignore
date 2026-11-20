@@ -1,0 +1,35 @@
+# Patient data and everything the pipeline writes; the scripts recreate these folders
+data/
+results/
+output/
+
+# rstan's compiled-model cache (auto_write), rebuilt on first use
+models/*.rds
+
+# renv: renv.lock and renv/activate.R are committed; the package library is not
+renv/library/
+renv/local/
+renv/staging/
+renv/cellar/
+
+# R, editor and OS files
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+.Ruserdata
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local only: the authors' notes, development tools, original scripts and the supplement
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+CHANGELOG.md
+tests/
+.lintr
+scripts/_template.R
+_archive/
+supplement/
+*.zip
